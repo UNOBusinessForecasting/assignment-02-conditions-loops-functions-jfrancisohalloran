@@ -19,7 +19,7 @@ for i in code:
             codelist = i['source']
             for k in range(len(codelist)):
                 if ("input" in codelist[k])|("input" in codelist[k]):
-                    codelist[k] = 'x = 112\n'
+                    codelist[k] = 'x = 112'
             print(codelist)
             with redirect_stdout(f):
                 exec("".join(codelist))
